@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{29F56CDB-7BDB-4768-87EC-7590850BE8BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>testers</RootNamespace>
+    <AssemblyName>testers</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Task1036Tester.cs" />
+    <Compile Include="Task1067Tester.cs" />
+    <Compile Include="Task1225Tester.cs" />
+    <Compile Include="Task1494Tester.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task1992Tester.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\task1036_lucky_tickets\task1036_lucky_tickets.csproj">
+      <Project>{0b55d14f-f836-4a84-822d-5577edc0c92e}</Project>
+      <Name>task1036_lucky_tickets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\task1067_disk_tree\task1067_disk_tree.csproj">
+      <Project>{4cb9106a-ef04-4574-92d7-7d10f864cb39}</Project>
+      <Name>task1067_disk_tree</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\task1225_flags\task1225_flags.csproj">
+      <Project>{2433b5bc-f51a-472f-9323-6979d14819b0}</Project>
+      <Name>task1225_flags</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\task1494_monobilliards\task1494_monobilliards.csproj">
+      <Project>{8f80c5dd-b4f6-4d29-ab79-d0b2aafeb981}</Project>
+      <Name>task1494_monobilliards</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\task1992_cvs\task1992_cvs.csproj">
+      <Project>{47010e67-1303-4fc3-8884-58768ae509ec}</Project>
+      <Name>task1992_cvs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

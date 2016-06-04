@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hanabi", "hanabi\hanabi.csproj", "{37BFA5DC-F0FE-4012-9821-BD9EA7E49BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hanabi.tester", "hanabi.tester\hanabi.tester.csproj", "{184E6485-6F5A-4034-A4AD-98E98F307B2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37BFA5DC-F0FE-4012-9821-BD9EA7E49BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37BFA5DC-F0FE-4012-9821-BD9EA7E49BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37BFA5DC-F0FE-4012-9821-BD9EA7E49BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37BFA5DC-F0FE-4012-9821-BD9EA7E49BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184E6485-6F5A-4034-A4AD-98E98F307B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184E6485-6F5A-4034-A4AD-98E98F307B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184E6485-6F5A-4034-A4AD-98E98F307B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184E6485-6F5A-4034-A4AD-98E98F307B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
